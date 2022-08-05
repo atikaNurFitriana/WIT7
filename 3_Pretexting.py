@@ -3,9 +3,19 @@ from PIL import Image
 
 st.set_page_config(page_title="Pretexting", layout="wide")
 
+# TOP HEADER IMAGE
+image1 = Image.open(
+    "C:\Streamlit\IMAGES\H3.png")
+st.image(image1)
+
+# SIDEBAR
+st.sidebar.markdown("# 📞 Pretexting")
+st.sidebar.markdown(
+    "Tentang teknik kejahatan *Social Engineering*, yaitu *Pretexting* yang melingkupi penjelasan, cara kerja, dan bagaimana cara mencegahnya")
+
 # Judul
-with st.container():
-    st.title("PRETEXTING")
+# with st.container():
+#    st.title("PRETEXTING")
 
 
 # Penjelasan pretexting
