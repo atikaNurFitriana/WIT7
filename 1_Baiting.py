@@ -3,10 +3,20 @@ from PIL import Image
 
 st.set_page_config(page_title="Baiting", layout="wide")
 
-# Judul
-with st.container():
-    st.title("BAITING")
+# TOP HEADER IMAGE
+image1 = Image.open(
+    "C:\Streamlit\IMAGES\H1.png")
+st.image(image1)
 
+# SIDEBAR
+st.sidebar.markdown("# 🎣 Baiting")
+st.sidebar.markdown(
+    "Tentang teknik kejahatan *Social Engineering*, yaitu *Baiting* yang melingkupi penjelasan, cara kerja, dan bagaimana cara mencegahnya")
+
+
+# Judul
+# with st.container():
+#    st.title("BAITING")
 
 # Penjelasan baiting
 with st.container():
