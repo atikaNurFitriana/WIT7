@@ -2,10 +2,20 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(page_title="Phising", layout="wide")
+# TOP HEADER IMAGE
+image1 = Image.open(
+    "C:\Streamlit\IMAGES\H4.png")
+st.image(image1)
+
+
+# SIDEBAR
+st.sidebar.markdown(" # 🎣 Phishing")
+st.sidebar.markdown(
+    "Tentang teknik kejahatan *Social Engineering*, yaitu *Phishing* yang melingkupi penjelasan, cara kerja, dan bagaimana cara mencegahnya")
 
 # Judul
-with st.container():
-    st.title("PHISING")
+# with st.container():
+#    st.title("PHISING")
 
 
 # Penjelasan pretexting
@@ -39,7 +49,7 @@ with st.container():
 
 with st.container():
     st.write("##")
-    st.header("Bagaimana Cara Mencegah Phising?")
+    st.subheader("Bagaimana Cara Mencegah Phising?")
     st.write(
         """
         - Filter spam dapat digunakan. Umumnya, filter menilai asal pesan, perangkat lunak yang digunakan untuk mengirim pesan, dan tampilan pesan untuk menentukan apakah itu spam. Terkadang, filter spam bahkan memblokir email dari sumber yang sah, sehingga tidak selalu 100% akurat.
