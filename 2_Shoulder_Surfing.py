@@ -3,9 +3,20 @@ from PIL import Image
 
 st.set_page_config(page_title="Shoulder Surfing", layout="wide")
 
+# TOP HEADER IMAGE
+image1 = Image.open(
+    "C:\Streamlit\IMAGES\H2.png")
+st.image(image1)
+
+# SIDEBAR
+st.sidebar.markdown("# 😎 Shoulder Surfing")
+st.sidebar.markdown(
+    "Tentang teknik kejahatan *Social Engineering*, yaitu *Shoulder Surfing* yang melingkupi penjelasan, cara kerja, dan bagaimana cara mencegahnya")
+
+
 # Judul
-with st.container():
-    st.title("SHOULDER SURFING")
+# with st.container():
+#    st.title("SHOULDER SURFING")
 
 # Penjelasan shoulder surfing
 
